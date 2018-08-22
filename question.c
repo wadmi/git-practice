@@ -10,6 +10,7 @@ int main(void){
             printf("%d %d\n",i,j);
             if (i % j == 0){
                 count++;
+                hoge
             }
         }
         if (count == 8){
