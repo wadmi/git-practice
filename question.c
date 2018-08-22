@@ -9,15 +9,13 @@ int main(void){
         for (j = 1 ; j <= i ; j += 2){
             printf("%d %d\n",i,j);
             if (i % j == 0){
-                count++;
-                printf("%dの約数の数は%d\n",i,count);
+                //ココ
             }
         }
         if (count == 8){
-            c++;
-            printf("Nの約数%d\n",c);
+            //ココ
         }
-        count = 0;
+        //ココ
     }
     printf("%d",c);
 }
