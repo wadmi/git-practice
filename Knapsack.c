@@ -9,10 +9,10 @@ int rec(int i,int j){
   int res;
   if(i ==n){
     //もう品物が　残っていない
-    res=//ここ
+    res=0;
   } else if(j < w[i]) {
     //この品物は入らない
-    res=//ここ
+    res=rec(i+1,j);
   }else {
     //入れない場合と入れる場合を両方試す
       res = max(rec(i + 1 , j),rec(i + 1,j - w[i]) + v[i]);
@@ -21,5 +21,5 @@ int rec(int i,int j){
 }
 
 void solve(){
-  printf("%d\n",rec(0,w));
+  printf("%d\n",rec(0,W));
 }
